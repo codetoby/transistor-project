@@ -1,0 +1,25 @@
+.section-pane {
+    -fx-background-radius: 10;
+    -fx-background-color: #121212;
+    -fx-padding: 10;
+}
+
+.title-text {
+    -fx-font-size: 16;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+}
+
+.item-text {
+    -fx-font-size: 12;
+    -fx-text-fill: #ffffff;
+}
+
+.result-text {
+    -fx-font-size: 12;
+    -fx-text-fill: #a7a7a7;
+}
+
+.grid-pane {
+    -fx-padding: 15 0 0 20;
+}

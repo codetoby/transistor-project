@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+
+<VBox prefHeight="248.0" prefWidth="154.0" spacing="5" style="-fx-background-color: rgba(224,224,224,0.5); -fx-border-color: #b0b0b0; -fx-border-width: 1; -fx-border-radius: 10; -fx-padding: 10;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.group14.presentation.controller.RouteBlockController">
+    <HBox alignment="CENTER_LEFT" spacing="5">
+        <Label fx:id="routeLabel" style="-fx-font-family: 'Gothica'; -fx-font-weight: bold;" text="Route x: A to B" />
+        <Circle fx:id="wheelChairStatus" fill="green" radius="5" />
+        <Circle fx:id="bikeAllowedStatus" fill="green" radius="5" />
+    </HBox>
+   <Label fx:id="originStopNameLabel" style="-fx-font-family: 'Gothica'; -fx-font-weight: bold;" text="Origin Stop: " />
+   <Label fx:id="destinationStopNameLabel" layoutX="21.0" layoutY="43.0" style="-fx-font-family: 'Gothica'; -fx-font-weight: bold;" text="Destination Stop:" />
+    <Label fx:id="departureTimeLabel" style="-fx-font-family: 'Gothica'; -fx-font-weight: bold;" text="Departure Time : x " />
+    <Label fx:id="distanceLabel" style="-fx-font-family: 'Gothica'; -fx-font-weight: bold;" text="Distance: x miles" />
+    <Label fx:id="durationLabel" style="-fx-font-family: 'Gothica';" text="Duration: x minutes" />
+   <Label fx:id="originToBusStopLabel" layoutX="21.0" layoutY="131.0" style="-fx-font-family: 'Gothica';" text="Time:" />
+   <Label fx:id="busStopToDestinationLabel" layoutX="21.0" layoutY="184.0" style="-fx-font-family: 'Gothica';" text="Time" />
+   <Label fx:id="totalTimeLabel" layoutX="21.0" layoutY="175.0" style="-fx-font-family: 'Gothica';" text="Time" />
+    <HBox alignment="BOTTOM_RIGHT">
+        <Button fx:id="selectButton" onAction="#handleSelectButtonClick" text="Select" />
+    </HBox>
+</VBox>

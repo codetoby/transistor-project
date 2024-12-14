@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.ScrollPane?>
+
+<ScrollPane xmlns:fx="http://javafx.com/fxml" fx:controller="org.group14.presentation.controller.RightSideBarController" fitToWidth="true" hbarPolicy="NEVER" prefWidth="300.0" vbarPolicy="ALWAYS">
+   <content>
+      <VBox alignment="CENTER" fx:id="routesContainer" spacing="10.0">
+         <padding>
+            <Insets top="10.0" right="10.0" bottom="10.0" left="10.0"/>
+         </padding>
+      </VBox>
+   </content>
+</ScrollPane>

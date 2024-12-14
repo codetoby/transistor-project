@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FindBugsFilter>
+    <Match>
+        <Bug code="SECURITY" />
+    </Match>
+    <Match>
+        <Bug pattern="SQL_INJECTION" />
+    </Match>
+    <Match>
+        <Bug pattern="XSS_REQUEST_PARAMETER_TO_JSP_WRITER" />
+    </Match>
+    <Match>
+        <Bug category="CORRECTNESS" />
+    </Match>
+    <Match>
+        <Bug code="MT_CORRECTNESS" />
+    </Match>
+    <Match>
+        <Bug pattern="BAD_PRACTICE" />
+    </Match>
+    <Match>
+        <Bug category="PERFORMANCE" />
+    </Match>
+    <Match>
+        <Bug code="STYLE" />
+    </Match>
+</FindBugsFilter>

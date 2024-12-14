@@ -1,0 +1,11 @@
+!!org.group14.config.Config
+calculatorConfig:
+  method: Haversine
+databaseConfig:
+  db: /gtfs
+  password: YOUR_PASSWORD
+  url: jdbc:mysql://localhost:3306
+  user: YOUR_USER
+routingConfig:
+  maxWalkingDistanceMeters: 500
+  maxWalkingSpeedMetersPerSecond: 1.34

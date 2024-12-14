@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" prefHeight="539.0" prefWidth="290.0" spacing="20.0" style="-fx-background-color: #000000" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.group14.presentation.controller.PrimaryController">
+   <Pane prefHeight="29.0" prefWidth="290.0">
+      <children>
+         <Button fx:id="settingsButton" layoutX="14.0" layoutY="1.0" mnemonicParsing="false" onMouseClicked="#handleOpenConfigPopup" text="Settings" />
+      </children>
+   </Pane>
+
+    <Pane styleClass="section-pane" stylesheets="@css/menu.css">
+        <GridPane alignment="CENTER_LEFT" hgap="10" prefWidth="250" styleClass="grid-pane" stylesheets="@css/menu.css" vgap="10">
+            <Label styleClass="title-text" text="Trip Info" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.rowIndex="0" />
+
+            <Label styleClass="item-text" text="Destination:" GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+            <Label fx:id="destinationLabel" styleClass="result-text" text="Waiting for input" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="TOP" />
+
+            <Label styleClass="item-text" text="Distance:" GridPane.columnIndex="0" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+            <Label fx:id="statusLabel" styleClass="result-text" text="Waiting for input" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.valignment="TOP" />
+
+            <Label styleClass="item-text" text="Actual Distance:" GridPane.columnIndex="0" GridPane.rowIndex="3" GridPane.valignment="TOP" />
+            <Label fx:id="actualDistance" styleClass="result-text" text="Waiting for input" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="3" GridPane.valignment="TOP" />
+
+            <Label styleClass="item-text" text="Estimated Walking Time:" GridPane.columnIndex="0" GridPane.rowIndex="4" GridPane.valignment="TOP" />
+            <Label fx:id="timeWalkLabel" styleClass="result-text" text="0 minutes" GridPane.columnIndex="1" GridPane.rowIndex="4" GridPane.valignment="TOP" />
+
+            <Label styleClass="item-text" text="Estimated Biking Time:" GridPane.columnIndex="0" GridPane.rowIndex="5" GridPane.valignment="TOP" />
+            <Label fx:id="timeBikeLabel" styleClass="result-text" text="0 minutes" GridPane.columnIndex="1" GridPane.rowIndex="5" GridPane.valignment="TOP" />
+
+            <columnConstraints>
+                <ColumnConstraints />
+                <ColumnConstraints />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+            </rowConstraints>
+
+        </GridPane>
+    </Pane>
+
+    <Pane styleClass="section-pane" stylesheets="@css/menu.css">
+        <GridPane alignment="CENTER_LEFT" hgap="10" prefWidth="250" styleClass="grid-pane" stylesheets="@css/menu.css" vgap="10">
+            <Label styleClass="title-text" text="Enter Details" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.rowIndex="0" />
+
+            <Label alignment="CENTER" styleClass="item-text" text="Origin Postal Code:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <TextField fx:id="originCode" text="6229HD" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+            <Label alignment="CENTER" styleClass="item-text" text="Destination Postal Code:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <TextField fx:id="destinationCode" text="6211LC" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+            <rowConstraints>
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+            </rowConstraints>
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+
+        </GridPane>
+    </Pane>
+
+    <Text fx:id="errorMessage" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Error Message" textAlignment="CENTER">
+        <font>
+            <Font size="10.0" />
+        </font>
+    </Text>
+
+    <Button fx:id="calculateButton" onMouseClicked="#calculate" text="Calculate Route" wrapText="true" />
+    <Button mnemonicParsing="false" onMouseClicked="#switchScene" text="Switch Map" />
+
+</VBox>

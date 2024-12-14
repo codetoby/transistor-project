@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="10" stylesheets="@css/settings.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.group14.presentation.controller.SettingsController">
+
+    <VBox spacing="5">
+        <Label styleClass="title-text" text="Database Configuration" />
+        <GridPane hgap="10" styleClass="grid-pane" vgap="10">
+            <Label styleClass="label" text="URL" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <TextField fx:id="databaseUrl" prefHeight="30.0" prefWidth="225.0" styleClass="text-field" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+            <Label styleClass="label" text="Username" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <TextField fx:id="databaseUsername" styleClass="text-field" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+            <Label styleClass="label" text="Password" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+            <TextField fx:id="databasePassword" styleClass="text-field" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+
+            <Label styleClass="label" text="Database" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+            <TextField fx:id="databaseDatabase" styleClass="text-field" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+        </GridPane>
+    </VBox>
+
+    <VBox />
+
+    <VBox spacing="5">
+        <Label styleClass="title-text" text="Calculator Config" />
+        <GridPane hgap="10" styleClass="grid-pane" vgap="10">
+            <Label styleClass="label" text="Method:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <ComboBox fx:id="optionsComboBox" styleClass="combo-box" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+         </rowConstraints>
+        </GridPane>
+    </VBox>
+
+    <VBox />
+
+    <VBox spacing="5">
+        <Label styleClass="title-text" text="Routing Config" />
+        <GridPane hgap="10" styleClass="grid-pane" vgap="10">
+            <Label styleClass="label" text="Max Walking Distance (Meters)" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+            <TextField fx:id="routingMaxWalkingDistance" styleClass="text-field" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+
+            <Label styleClass="label" text="Max Walking Speed m/s" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+            <TextField fx:id="routingMaxWalkingSpeed" styleClass="text-field" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+        </GridPane>
+    </VBox>
+
+    <!-- Buttons -->
+    <HBox alignment="CENTER_RIGHT" spacing="10" styleClass="hbox">
+      <Pane prefHeight="0.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="errorMessage" layoutX="14.0" layoutY="11.0" prefHeight="18.0" prefWidth="179.0" text="Error Message" textFill="#ff0505" />
+         </children>
+      </Pane>
+        <Button fx:id="saveConfig" onMouseClicked="#saveConfig" prefWidth="80" styleClass="button" text="Save" />
+        <Button fx:id="closePopup" onMouseClicked="#closeConfig" prefWidth="80" styleClass="button" text="Close" />
+    </HBox>
+
+</VBox>

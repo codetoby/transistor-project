@@ -11,12 +11,8 @@ import org.group14.domain.models.Point;
 import org.group14.domain.models.ZipCode;
 import org.group14.presentation.StaticMapScene;
 import org.group14.presentation.interactive.InteractiveMapScene;
-import org.group14.services.calculator.Measurer;
 import org.group14.services.calculator.TravelInformationCalculator;
 import org.group14.services.calculator.TravelInformationDTO;
-import org.group14.services.calculator.distance.Haversine;
-import org.group14.services.calculator.time.TimeCalculatorFactory;
-import org.group14.services.calculator.time.WalkingTime;
 import org.group14.services.routing.AbstractRoutingResponse;
 import org.group14.services.routing.RouteService;
 import org.group14.services.routing.bus.routing.responses.AbstractBusRoutingResponse;
@@ -85,15 +81,15 @@ public class PrimaryController {
 
     private RightSideBarController rightSideBarController;
 
-    public PrimaryController(RouteService routingService, ZipCodeController zipCodeController) {
+    public PrimaryController(RouteService routingService, ZipCodeController zipCodeController, TravelInformationCalculator travelInfoService) {
         this.routeService = routingService;
         this.zipCodeController = zipCodeController;
+		this.travelInfoService = travelInfoService;
     }
 
     @FXML
     public void initialize() {
         errorMessage.setVisible(false);
-        travelInfoService = new TravelInformationCalculator(new Measurer(new Haversine(), TimeCalculatorFactory.createCalculator(new WalkingTime())));
 
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/group14/fxml/rightSideBar.fxml"));

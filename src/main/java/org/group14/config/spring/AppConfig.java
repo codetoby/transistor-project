@@ -10,8 +10,8 @@ import org.group14.services.calculator.time.TimeCalculatorFactory;
 import org.group14.services.calculator.time.WalkingTime;
 import org.group14.services.routing.RouteService;
 import org.group14.services.zipcode.IZipCodeService;
-import org.group14.services.zipcode.ZipCodeController;
 import org.group14.services.zipcode.database.DatabaseZipCodeService;
+import org.group14.services.zipcode.ZipCodeController;
 import org.springframework.context.annotation.Bean;
 
 public class AppConfig {
@@ -43,7 +43,7 @@ public class AppConfig {
 
     @Bean
     public PrimaryController primaryController() throws Exception {
-        return new PrimaryController(routingService(), zipCodeController());
+        return new PrimaryController(routingService(), zipCodeController(), travelInformationCalculator());
     }
 
     @Bean

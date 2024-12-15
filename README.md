@@ -40,9 +40,9 @@ $ docker ps
 
 3. Copy files to the container:
 ```bash
-$ docker cp ./resources/gtfs <container-name>:/
-$ docker cp ./resources/CompleteZipCodes.txt <container-name>:/
-$ docker cp ./create_table.sql <container-name>:/
+$ docker cp ./gtfs <container-name>:/
+$ docker cp ./scripts/zipcodes/CompleteZipCodes.txt <container-name>:/
+$ docker cp ./scripts/sql/setup_database.sql <container-name>:/
 ```
 
 4. Access the container:
@@ -72,7 +72,7 @@ $ mysql --local-infile=1 -u root -p
 
 9. Run script to create and fill tables:
 ```bash
-mysql> source create_table.sql
+mysql> source ./scripts/sql/setup_database.sql
 ```
 
 
@@ -82,7 +82,7 @@ A step-by-step series of examples that tell you how to get a development environ
 
 1. Clone the repository:
 ```bash
-   git clone https://gitlab.maastrichtuniversity.nl/bcs_group14_2024/group14.git .
+   git clone https://github.com/codetoby/transistor-project.git .
 ```
 2. Install Maven dependencies:
 ```bash
@@ -95,16 +95,16 @@ A step-by-step series of examples that tell you how to get a development environ
 
 ## Database Configuration Setup
 
-To configure the database settings for the application, please update the database properties file located at:
-
-```bash
-src/main/resources/org/group14/database.properties
-```
+To configure the database settings for the application, please create a new .env file in the root directory of the project and provide the following properties:
+1. `MYSQL_DATABASE` - The URL of the database server.
+2. `MYSQL_USER` - The username to connect to the database.
+3. `MYSQL_PASSOWRD` - The password to connect to the database.
+4. `MYSQL_ROOT_PASSOWRD` - The name of the database to connect to.
 
 For guidance on the format and available configuration options, refer to the example file provided at:
 
 ```bash
-src/main/resources/org/group14/example.database.properties
+.env.example
 ```
 
 ## Usage

@@ -1,0 +1,37 @@
+agency_id,agency_name,agency_url,agency_timezone,agency_phone
+IFF:EB,Eurobahn,https://www.eurobahn.de,Europe/Amsterdam,+4934191354042
+BRENG,Breng,http://www.breng.nl,Europe/Amsterdam,003126-2142140
+TEXELHOPPER,Texelhopper,http://www.texelhopper.nl,Europe/Amsterdam,0031222784000
+DOEKSEN,Rederij Doeksen,https://www.rederij-doeksen.nl/,Europe/Amsterdam,+31889000888
+ALLGO,allGo (Keolis),http://www.allgobus.nl,Europe/Amsterdam,003188-0331360
+WPD,Wagenborg Passagiersdiensten,https://www.wpd.nl/,Europe/Amsterdam,+31881031000
+IFF:NSI,NS International,http://www.nsinternational.nl,Europe/Amsterdam,0031302300023
+BRAVO:ARR,Bravo (Arriva),https://www.bravo.info,Europe/Amsterdam,0031800-0232545
+SYNTUS:UT,Syntus Utrecht,http://www.syntusutrecht.nl,Europe/Amsterdam,003188-0331360
+BLUEAMIGO,Blue Amigo,https://www.waterbus.nl,Europe/Amsterdam,+31854895191
+TRANSDEV,Transdev,http://www.transdev.nl,Europe/Amsterdam,00319008686
+HERMES,Hermes,http://www.hermes.nl,Europe/Amsterdam,0031800-0222277
+IFF:ES,Eu Sleeper,https://www.europeansleeper.eu/,Europe/Amsterdam,0
+IFF:RRREIS,RRReis,https://www.rrreis.nl,Europe/Amsterdam,+31852085212
+BRAVO:CXX,Bravo (Hermes),http://www.bravo.info,Europe/Amsterdam,0031800-0222277
+IFF:DB,DB,http://www.db.de,Europe/Amsterdam,+491806996633
+RRREIS,RRReis,https://arriva.nl/,Europe/Amsterdam,+31852085212
+CXX,Connexxion,http://www.connexxion.nl,Europe/Amsterdam,0031900-2666399
+UOV,U-OV,http://www.u-ov.info,Europe/Amsterdam,0031900-5252241
+QBUZZ,Qbuzz,http://www.qbuzz.nl,Europe/Amsterdam,0031900-7289965
+IFF:ARRIVA,Arriva (OVR),http://www.arriva.nl,Europe/Amsterdam,0031900-2022022
+IFF:BN,Blauwnet,http://www.blauwnet.nl,Europe/Amsterdam,0031314350111
+ARR,Arriva,https://arriva.nl/,Europe/Amsterdam,0031800-0232545
+IFF:VIAS,VIAS,https://www.vias-online.de/,Europe/Amsterdam,+49069450099650
+EBS,EBS,http://www.ebs-ov.nl,Europe/Amsterdam,0031800-0327
+HTM,HTM,https://htm.nl/klantenservice/,Europe/Amsterdam,+319004864636
+IFF:RNET,R-net,http://www.connexxion.nl,Europe/Amsterdam,0031900-2666399
+TESO,TESO,https://teso.nl/,Europe/Amsterdam,+31222369600
+IFF:NS,NS,http://www.ns.nl,Europe/Amsterdam,003130-7515155
+IFF:NMBS,NMBS,http://www.nmbs.be,Europe/Amsterdam,+3225282828
+OVERAL,Overal (Connexxion),http://www.overal.nl,Europe/Amsterdam,0031900-2666399
+GVB,GVB,http://www.gvb.nl,Europe/Amsterdam,0031900-8011
+DELIJN,De Lijn,http://www.delijn.be,Europe/Amsterdam,0031900-7289965
+NIAG,NIAG,http://www.niag-online.de/,Europe/Amsterdam,+4901803504030
+RET,RET,http://www.ret.nl,Europe/Amsterdam,0031900-5006010
+IFF:BRENG,Breng,http://www.breng.nl,Europe/Amsterdam,003126-2142140
